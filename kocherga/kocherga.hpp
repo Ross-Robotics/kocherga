@@ -1343,6 +1343,8 @@ private:
                 {
                     pending_log_ = {detail::dsdl::Diagnostic::Severity::Critical, "ROM write failure"};
                 }
+                
+                pending_log_ = {detail::dsdl::Diagnostic::Severity::Notice, "Firmware update completed"};
                 reset(true);
             }
         }
