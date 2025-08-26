@@ -5,6 +5,6 @@ project(kocherga)
 add_library(kocherga INTERFACE)
 
 target_include_directories(kocherga
-  INTERFACE
+  SYSTEM INTERFACE
     "kocherga"
 )
